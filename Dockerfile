@@ -17,3 +17,4 @@ RUN javac Main.java
 
 # Run the Java application when the container starts
 CMD ["java", "Main"]
+
