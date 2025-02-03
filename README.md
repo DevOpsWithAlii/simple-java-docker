@@ -5,17 +5,16 @@ A simple java app that runs on docker.
 - Projects
 
 - # use openjdk 17 as a base image
-FROM openjdk:17-jdk-alpine
+- FROM openjdk:17-jdk-alpine
 
 # set the working directory 
-WORKDIR /app
+- WORKDIR /app
 
 # copy the code 
-COPY src/Main.java /app/Main.java
+- COPY src/Main.java /app/Main.java
 
 #compile the java app(Libraries
-RUN javac Main.java
+- RUN javac Main.java
 
 # Add entry point to run the Main class
-
-CMD ["java","Main"]
+- CMD ["java","Main"]
