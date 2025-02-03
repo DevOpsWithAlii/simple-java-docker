@@ -1,10 +1,9 @@
 # simple-java-docker
 A simple java app that runs on docker.
-- Runs on Docker 
-- Docker Commands...
-- Projects
 
-- # use openjdk 17 as a base image
+- # Dockerfile
+
+# use openjdk 17 as a base image
 - FROM openjdk:17-jdk-alpine
 
 # set the working directory 
@@ -13,7 +12,7 @@ A simple java app that runs on docker.
 # copy the code 
 - COPY src/Main.java /app/Main.java
 
-#compile the java app(Libraries
+# compile the java app(Libraries
 - RUN javac Main.java
 
 # Add entry point to run the Main class
