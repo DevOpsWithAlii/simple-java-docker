@@ -12,7 +12,7 @@ A simple java app that runs on docker.
 # copy the code 
 - COPY src/Main.java /app/Main.java
 
-# compile the java app(Libraries
+# compile the java app(Libraries)
 - RUN javac Main.java
 
 # Add entry point to run the Main class
