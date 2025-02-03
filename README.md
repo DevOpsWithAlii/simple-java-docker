@@ -15,5 +15,5 @@ A simple java app that runs on docker.
 # compile the java app(Libraries)
 - RUN javac Main.java
 
-# Add entry point to run the Main class
+# Run
 - CMD ["java","Main"]
